@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PracticalLoginPage</string>
+    <string name="txtEmail">Email Address</string>
+    <string name="btnRegister">Register</string>
+    <string name="txtPassword">Password</string>
+    <string name="txtConfirmPassword">Confirm Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="RegText">New to our service?</string>
+</resources>
