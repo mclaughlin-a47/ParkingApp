@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".CarPark1">
 
-
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
@@ -15,31 +14,39 @@
         android:inputType="textPersonName"
         android:text="MeadowBank"
         tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="52dp" />
+        tools:layout_editor_absoluteY="52dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="306dp"
         android:layout_height="170dp"
-        app:srcCompat="@drawable/meadowBank"
+        app:srcCompat="@drawable/meadowbank"
         tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="128dp" />
+        tools:layout_editor_absoluteY="128dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView2"
         android:layout_width="353dp"
         android:layout_height="260dp"
-        app:srcCompat="@drawable/MeadowBank_google"
+        app:srcCompat="@drawable/meadowbank_google"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="300dp" />
+        tools:layout_editor_absoluteY="300dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scan Here"
+        android:id="@+id/btnscan"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Scan"
+        android:textSize="18dp"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="590dp" />
+        tools:layout_editor_absoluteY="590dp"
+        tools:ignore="MissingConstraints"/>
 
     <Button
         android:id="@+id/button2"
@@ -47,7 +54,8 @@
         android:layout_height="wrap_content"
         android:text="Back"
         tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="590dp" />
+        tools:layout_editor_absoluteY="590dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
@@ -55,6 +63,8 @@
         android:layout_height="25dp"
         android:text="Price: £3.00"
         tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="613dp" />
+        tools:layout_editor_absoluteY="590dp"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
