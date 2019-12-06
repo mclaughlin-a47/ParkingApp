@@ -12,20 +12,47 @@
         android:layout_height="170dp"
         android:layout_marginStart="53dp"
         android:layout_marginLeft="53dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="53dp"
         android:layout_marginRight="53dp"
-        android:layout_marginBottom="18dp"
-        app:srcCompat="@drawable/parkinglogo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/parkinglogo" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="368dp"
-        android:layout_height="521dp"
-        app:srcCompat="@drawable/home_page_Screenshot"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="193dp" />
+        android:layout_width="405dp"
+        android:layout_height="270dp"
+        app:srcCompat="@drawable/home_page_screenshot"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="117dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Welcome to"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Please select your Car Park"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <Spinner
+        android:id="@+id/CarParkSpin"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="341dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

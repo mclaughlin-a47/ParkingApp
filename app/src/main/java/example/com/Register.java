@@ -37,29 +37,18 @@ public class Register extends AppCompatActivity {
                 if (Email_S.equals("") || NewPassword_S.equals("") || ConfirmPassword_S.equals("")) {
                     Toast.makeText(getApplicationContext(),
                             "One or more fields are empty", Toast.LENGTH_SHORT).show();
-                } else {
+                } else if(!Email_S.matches("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+")){
+                    Toast.makeText(getApplicationContext(),
+                            "Invalid format for email", Toast.LENGTH_SHORT).show();
+                }else {
                     if (NewPassword_S.equals(ConfirmPassword_S)) {
                         Boolean checkEmail = db.checkEmail(Email_S);
                         if (checkEmail == true) {
                             Boolean insert = db.insert(Email_S, NewPassword_S);
                             if (insert == true) {
                                 Toast.makeText(getApplicationContext(), "Account Registered successfully", Toast.LENGTH_SHORT).show();
-                               Registered = true;
-
-                                if (Registered == true){
-
-                                    RegisterAccount = (Button) findViewById(R.id.btnRegisterAccount);
-                                    RegisterAccount.setOnClickListener(new View.OnClickListener() {
-
-                                        @Override
-                                        public void onClick(View v){
-                                            Intent i = new Intent(Register.this, MainActivity.class);
-                                            startActivity(i); }
-
-
-                                    });
-
-                                }
+                                Intent i = new Intent(Register.this, MainActivity.class);
+                                startActivity(i);
                             }
                         } else {
                             Toast.makeText(getApplicationContext(), "Account already Exists!", Toast.LENGTH_SHORT).show();

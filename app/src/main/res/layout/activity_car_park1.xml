@@ -42,7 +42,8 @@
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:gravity="center"
-        android:text="Scan"
+        android:onClick="scanQR"
+        android:text="QR Code"
         android:textSize="18dp"
         tools:layout_editor_absoluteX="29dp"
         tools:layout_editor_absoluteY="590dp"
@@ -65,6 +66,16 @@
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="590dp"
         tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtCarParkCounter"
+        android:layout_width="186dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Spaces Available: 50"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="638dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

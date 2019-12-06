@@ -6,4 +6,11 @@
     <string name="txtConfirmPassword">Confirm Password</string>
     <string name="btnLogin">Login</string>
     <string name="RegText">New to our service?</string>
-</resources>
+    <string name="title_activity_maps">Map</string>
+    <string name="CarPark_prompt">Choose a Car Park</string>
+
+    <string-array name="CarParkSpin">
+        <item>MeadowBank</item>
+        <item>Victoria CarPark</item>
+    </string-array>
+    </resources>

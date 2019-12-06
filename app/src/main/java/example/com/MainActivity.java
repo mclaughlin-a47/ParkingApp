@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
                         if (checkPassword == true) {
                             Toast.makeText(getApplicationContext(), "Login Successful",
                                     Toast.LENGTH_SHORT).show();
+
+                            Intent i = new Intent(MainActivity.this, MapsActivity.class);
+                            startActivity(i);
+
                         } else {
                             Toast.makeText(getApplicationContext(), "Incorrect Password",
                                     Toast.LENGTH_SHORT).show();
